@@ -77,14 +77,18 @@
 </div>
 
 <div id="slides" class="offscreen" style="display:none;">
-<div class="slide" data-transition="none"><div class="content center" ref="one/00_title/1">
+<div class="slide" data-transition="none"><div class="content center green" ref="one/00_title/1">
 <h1>Cucumber and friends</h1>
 
 <h2>tools for security that matters</h2>
 
 <h1><a href="http://bit.ly/securitythatmatters">bit.ly/securitythatmatters</a></h1>
+
+<p><img src="./file/one/owasp_logo.png" alt="owasp">
+</img>
+</p>
 </div>
-</div><div class="slide" data-transition="fade"><div class="content bullets incremental evensmaller" ref="one/00_title/2">
+</div><div class="slide" data-transition="fade"><div class="content bullets evensmaller" ref="one/00_title/2">
 <h1>Mani Tadayon</h1>
 
 <ul>
@@ -94,11 +98,15 @@
 </li>
 </ul>
 </div>
-</div><div class="slide" data-transition="fade"><div class="content bullets incremental evensmaller" ref="one/00_title/3">
+</div><div class="slide" data-transition="fade">
+  <div class="content bullets evensmaller" ref="one/00_title/3">
 <h1>Tin Zaw</h1>
 
 <ul>
 <li><img src="./file/one/atti_logo.png" alt="atti"/>
+<li><img src="./file/one/owasp_logo_small.png" alt="owasp"/>
+<li><a href="http://twitter.com/tzaw">@tzaw</a></li>
+</li>
 </li>
 </ul>
 </div>
@@ -184,7 +192,19 @@ end
 
 ...</code></pre>
 </div>
-</div><div class="slide" data-transition="fade"><div class="content smaller" ref="one/02_cuke_and_friends/9">
+</div><div class="slide" data-transition="fade"><div class="content code smaller" ref="one/02_cuke_and_friends/9">
+<pre class="sh_sh"><code># Write just enough code
+# to make the cucumbers green
+$ cucumber features/profile.feature</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center green" ref="one/02_cuke_and_friends/10">
+<h1>Green cukes: you're done!</h1>
+
+<p><img src="./file/one/green_cukes.png" alt="cuke">
+</img>
+</p>
+</div>
+</div><div class="slide" data-transition="fade"><div class="content smaller" ref="one/02_cuke_and_friends/11">
 <h1>Chef</h1>
 
 <h2>Infrastructure As Code</h2>
@@ -193,12 +213,12 @@ end
 
 <h2>The Cloud!</h2>
 </div>
-</div><div class="slide" data-transition="fade"><div class="content bullets incremental smaller" ref="one/02_cuke_and_friends/10">
+</div><div class="slide" data-transition="fade"><div class="content bullets incremental smaller" ref="one/02_cuke_and_friends/12">
 <h1>Automation + verifiability + reusability</h1>
 
 <h2>= 10 sysadmins replaced by 1 devops engineer</h2>
 </div>
-</div><div class="slide" data-transition="fade"><div class="content code evensmaller" ref="one/02_cuke_and_friends/11">
+</div><div class="slide" data-transition="fade"><div class="content code evensmaller" ref="one/02_cuke_and_friends/13">
 <pre class="sh_ruby"><code># first define a Chef recipe for sudo
 package "sudo" do
   action :upgrade
@@ -225,7 +245,7 @@ end
   }
 }</code></pre>
 </div>
-</div><div class="slide" data-transition="fade"><div class="content code evensmaller" ref="one/02_cuke_and_friends/12">
+</div><div class="slide" data-transition="fade"><div class="content code evensmaller" ref="one/02_cuke_and_friends/14">
 <pre class="sh_ruby"><code># how about configuring a firewall?
 
 # recipe omitted for the sake of brevity...
@@ -239,21 +259,22 @@ firewall_rule "myapplication" do  # firewall_rule is defined in the recipe
   action :allow
 end</code></pre>
 </div>
-</div><div class="slide" data-transition="fade"><div class="content smaller" ref="one/02_cuke_and_friends/13">
+</div><div class="slide" data-transition="fade"><div class="content smaller" ref="one/02_cuke_and_friends/15">
 <h1>Cucumber-Chef</h1>
 
 <h2>Test-Driven Infrastructure</h2>
 </div>
-</div><div class="slide" data-transition="fade"><div class="content code smaller" ref="one/02_cuke_and_friends/14">
+</div><div class="slide" data-transition="fade"><div class="content code smaller" ref="one/02_cuke_and_friends/16">
 <pre class="sh_cucumber"><code># Specify the infrastructure with cucumber
 
 # features/server.feature
 Scenario: Users can connect to server via ssh key 
   Given a newly bootstrapped server
   When the technical users recipe is applied
-  Then a user should be able to ssh to the server
-
-# create_server, run_chef, set_run_list are defined in Cucumber-Chef      
+  Then a user should be able to ssh to the server</code></pre>
+</div>
+</div><div class="slide" data-transition="fade"><div class="content code evensmaller" ref="one/02_cuke_and_friends/17">
+<pre class="sh_ruby"><code># create_server, run_chef, set_run_list are defined in Cucumber-Chef      
 # features/step_definitions/server_steps.rb
 Given /^a newly bootstrapped server$/ do
   create_server("teamserver", "192.168.20.20")  
@@ -266,7 +287,7 @@ end
 
 ...</code></pre>
 </div>
-</div><div class="slide" data-transition="none"><div class="content" ref="one/02_cuke_and_friends/15">
+</div><div class="slide" data-transition="none"><div class="content" ref="one/02_cuke_and_friends/18">
 <h1>That was a lot of material</h1>
 
 <h2>Let's pause for questions before we proceed</h2>
@@ -349,23 +370,35 @@ Scenario: Reset password
 <h1>More Info</h1>
 
 <ul>
-<li>cukes.info</li>
-<li>opscode.com/chef</li>
-<li>cucumber-chef.org</li>
-<li>The RSpec Book</li>
-<li>The Cucumber Book</li>
-<li>The Secret Ninja Cucumber Scrolls</li>
-<li>Specification By Example</li>
-<li>Test-Driven Infrastructure with Chef</li>
+<li><a href="http://cukes.info">cukes.info</a></li>
+<li><a href="http://opscode.com/chef">opscode.com/chef</a></li>
+<li><a href="http://cucumber-chef.org">cucumber-chef.org</a></li>
+<li><a href="http://pragprog.com/book/achbd/the-rspec-book">The RSpec Book</a></li>
+<li><a href="http://pragprog.com/book/hwcuc/the-cucumber-book">The Cucumber Book</a></li>
+<li><a href="http://cuke4ninja.com/">The Secret Ninja Cucumber Scrolls</a></li>
+<li><a href="http://manning.com/adzic/">Specification By Example</a></li>
+<li><a href="http://shop.oreilly.com/product/0636920020042.do">Test-Driven Infrastructure with Chef</a></li>
 </ul>
 </div>
-</div><div class="slide" data-transition="none"><div class="content bullets" ref="one/05_thanks">
+</div><div class="slide" data-transition="none"><div class="content center" ref="one/05_thanks/1">
 <h1>Thanks for listening!</h1>
 
+<p><img src="./file/one/ARS_cucumber.jpg" alt="cucumber and friends">
+</img>
+</p>
+</div>
+</div><div class="slide" data-transition="none">
+  <div class="content bullets green" ref="one/05_thanks/2">
+<h1>Cucumber and friends</h1>
+
+<h2>tools for security that matters</h2>
+
 <ul>
-<li>Mani Tadayon</li>
-<li>Tin Zaw</li>
+<li>Mani Tadayon <a href="http://twitter.com/bwsr_sr">@bwsr_sr</a> </li>
+<li>Tin Zaw <a href="http://twitter.com/tzaw">@tzaw</a></li>
 <li><img src="./file/one/atti_logo.png" alt="atti"/>
+<li><img src="./file/one/owasp_logo_small.png" alt="owasp"/>
+</li>
 </li>
 </ul>
 </div>

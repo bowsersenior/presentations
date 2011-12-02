@@ -1,6 +1,0 @@
-source :rubygems
-gem 'rdiscount'
-gem 'nokogiri'
-gem 'pdfkit'
-gem 'showoff', :git => 'https://github.com/schacon/showoff.git'
-gem 'gli'

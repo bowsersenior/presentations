@@ -34,7 +34,7 @@
   font-family: 'Ubuntu';
 }
 
-strong {
+strong, .green h1 {
   color: green;
 }
 
