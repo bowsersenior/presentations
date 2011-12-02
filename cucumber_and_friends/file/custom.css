@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Ubuntu'), url(ubuntu.woff);
+}
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Ubuntu Mono'), local('UbuntuMono-Regular'), url(ubuntu_mono.woff);
+}
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: italic;
+  font-weight: bold;
+  src: local('Ubuntu Mono Bold Italic'), local('UbuntuMono-BoldItalic'), url(ubuntu_mono_bold_italic.woff);
+}
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Ubuntu Mono Bold'), local('UbuntuMono-Bold'), url(ubuntu_mono_bold.woff);
+}
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Ubuntu Mono Italic'), local('UbuntuMono-Italic'), url(ubuntu_mono_italic.woff);
+}
+
+.content {
+  font-family: 'Ubuntu';
+}
+
+strong {
+  color: green;
+}
+
+code, code * {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+.bullets ol {
+  font-size: 3em;
+}
+.bullets ol li {
+  text-align: left;
+  padding: 25px;
+  margin: 0 auto;
+  margin-left: 10%;
+}
+
+.evensmaller {
+  font-size: 50%;
+}

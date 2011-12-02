@@ -1,0 +1,7 @@
+{ "name": "Intro to Redmine", 
+	"sections": [ 
+		{"section":"redmine"},
+		{"section":"cucumber"},
+		{"section":"thanks"}
+	]
+}

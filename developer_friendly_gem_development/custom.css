@@ -1,0 +1,17 @@
+ol {
+  list-style-type: decimal;
+}
+
+.bullets ol {
+  font-size: 3em;
+}
+.bullets ol li {
+  text-align: left;
+  padding: 25px;
+  margin: 0 auto;
+  margin-left: 10%;
+}
+
+.evensmaller {
+  font-size: 50%;
+}
