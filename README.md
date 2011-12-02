@@ -1,4 +1,4 @@
-= Presentations by Mani Tadayon
+# Presentations by Mani Tadayon
 
 * Intro to Redmine
 * Developer-friendly Gem Development
