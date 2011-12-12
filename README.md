@@ -2,10 +2,10 @@
 
 * Intro to Redmine
   * presented internally at CSUN
-  * [http://gentle-sky-70.heroku.com](http://gentle-sky-70.heroku.com)
+  * [http://bit.ly/intro2redmine](http://bit.ly/intro2redmine)
 * Developer-friendly Gem Development
   * presented internally at AT&T Interactive and at LA Ruby monthly meetup
-  * [http://sn.im/gemdev](http://sn.im/gemdev)
+  * [http://bit.ly/friendlygemdev](http://bit.ly/friendlygemdev)
 * Sleep sort: time is on your side
   * presented at LA Ruby monthly meetup
   * [http://bit.ly/rubysleepsort](http://bit.ly/rubysleepsort)
