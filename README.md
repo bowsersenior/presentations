@@ -9,7 +9,7 @@
 * Sleep sort: time is on your side
   * presented at LA Ruby monthly meetup
   * [http://bit.ly/rubysleepsort](http://bit.ly/rubysleepsort)
-* Ruby tools for writin (and deploying) software that matters
+* Ruby tools for writing (and deploying) software that matters
   * presented at the AT&T Software Symposium 2011
   * [Abstract in PDF format](https://github.com/bowsersenior/presentations/raw/master/att_symposium/abstract.pdf)
 * Cucumber and friends: tools for security that matters (with Tin Zaw)
