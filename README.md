@@ -13,5 +13,6 @@
   * presented at the AT&T Software Symposium 2011
   * [Abstract in PDF format](https://github.com/bowsersenior/presentations/raw/master/att_symposium/abstract.pdf)
 * Cucumber and friends: tools for security that matters (with Tin Zaw)
-  * presented at OWASP LA monthly meetup
+  * presented Dec. 2011 at OWASP LA monthly meetup 
+  * presented Mar. 2012 at OWASP Austin, TX monthly meetup
   * [http://bit.ly/securitythatmatters](http://bit.ly/securitythatmatters)
