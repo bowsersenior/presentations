@@ -1,6 +1,5 @@
 source :rubygems
 gem 'rdiscount'
 gem 'nokogiri'
-gem 'sinatra'
-gem 'showoff', :git => 'https://github.com/schacon/showoff.git'
+gem 'showoff'
 gem 'gli'
