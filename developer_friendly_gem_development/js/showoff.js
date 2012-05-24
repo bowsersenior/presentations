@@ -32,15 +32,15 @@ function setupPreso(load_slides, prefix) {
 	loadSlidesPrefix = prefix
 	loadSlides(loadSlidesBool, loadSlidesPrefix)
 
-	doDebugStuff()
+	doDebugStuff();
 
 	// bind event handlers
-	document.onkeydown = keyDown
-	document.onkeyup = keyUp
+	document.onkeydown = keyDown;
+	document.onkeyup = keyUp;
 	/* window.onresize	= resized; */
 	/* window.onscroll = scrolled; */
 	/* window.onunload = unloaded; */
-}
+};
 
 function loadSlides(load_slides, prefix) {
 	//load slides offscreen, wait for images and then initialize
