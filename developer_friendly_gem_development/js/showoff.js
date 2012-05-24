@@ -85,7 +85,11 @@ function initializePresentation(prefix) {
 		slidesLoaded = true
 	}
 	setupSlideParamsCheck();
-	sh_highlightDocument(prefix+'/js/sh_lang/', '.min.js')
+
+	// from: https://github.com/schacon/showoff/pull/63#issuecomment-642990
+	location.protocol == "file:" || sh_highlightDocument(prefix+'/js/sh_lang/', '.min.js');
+	//sh_highlightDocument(prefix+'/js/sh_lang/', '.min.js')
+	
 	$(".preso").trigger("showoff:loaded");
 }
 
