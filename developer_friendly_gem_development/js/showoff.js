@@ -35,8 +35,11 @@ function setupPreso(load_slides, prefix) {
 	doDebugStuff();
 
 	// bind event handlers
-	document.onkeydown = keyDown;
-	document.onkeyup = keyUp;
+	// document.onkeydown = keyDown;
+	// document.onkeyup = keyUp;
+
+	$(document).keydown(keyDown);
+	$(document).keyup(keyUp);	
 	/* window.onresize	= resized; */
 	/* window.onscroll = scrolled; */
 	/* window.onunload = unloaded; */
